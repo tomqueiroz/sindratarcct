@@ -1,0 +1,135 @@
+.sdr .wrap.service-page { max-width:1120px; padding-top:30px; padding-bottom:48px; }
+.sdr .service-breadcrumb { background:#fafafa; border-bottom:1px solid var(--line); font-size:11px; }
+.sdr .service-breadcrumb .wrap { display:flex; gap:12px; padding-top:8px; padding-bottom:8px; }
+.sdr .service-breadcrumb a { color:#4e4e4e; }
+.sdr .service-title { background:#000; border-top:2px solid var(--cyan); text-align:center; padding:30px 0; }
+.sdr .service-title h1 { color:#fff; font-size:30px; letter-spacing:-.5px; margin:0 0 8px; line-height:1.35; }
+.sdr .service-title p { color:#d3d3d3; font-size:13px; margin:0; }
+.sdr .service-start { margin-bottom:20px; }
+.sdr .service-start h2 { font-size:21px; margin:0 0 7px; }
+.sdr .service-start p { max-width:790px; color:var(--sub); margin:0; font-size:13px; }
+.sdr details.service-negotiations { border:1px solid var(--line); margin-bottom:20px; border-radius:6px; background:#fafafa; overflow:hidden; }
+.sdr .service-negotiations summary { padding:15px 18px; align-items:center; }
+.sdr .service-negotiations summary strong { display:block; font-size:13px; color:var(--ink); }
+.sdr .service-negotiations summary small { display:block; font-size:11px; color:var(--sub); font-weight:400; margin-top:4px; }
+.sdr .service-negotiations-body { padding:0 18px 18px; border-top:1px solid var(--line); }
+.sdr .service-negotiations-body>p { font-size:12px; margin:14px 0; }
+.sdr .service-negotiations table { width:100%; border-collapse:collapse; font-size:12px; text-align:left; background:#fff; }
+.sdr .service-negotiations caption { text-align:left; color:var(--sub); padding:0 0 10px; font-size:11px; }
+.sdr .service-negotiations th,.sdr .service-negotiations td { padding:12px; border-bottom:1px solid var(--line); vertical-align:top; }
+.sdr .service-negotiations thead th { background:#eee; font-size:11px; }
+.sdr .service-negotiations th[scope=row] { font-weight:600; }
+.sdr .negotiation-status { display:inline-block; padding:3px 8px; border-radius:4px; font-size:11px; }
+.sdr .negotiation-status.is-signed { color:#22624a; background:#edf6f0; }
+.sdr .negotiation-status.is-pending { color:#765316; background:#fff4db; }
+.sdr .service-negotiations-links { display:flex; gap:20px; flex-wrap:wrap; }
+.sdr .service-negotiations-links a { color:var(--blue); font-size:12px; text-decoration:underline; text-underline-offset:3px; }
+.sdr .service-demo { font-size:11px; padding:10px 14px; color:#795e24; border:1px solid #eadfc5; background:#fffbf1; border-radius:6px; margin-bottom:24px; }
+.sdr .service-grid { display:grid; grid-template-columns:240px minmax(0,1fr); gap:28px; align-items:start; }
+.sdr .service-rail { position:sticky; top:24px; padding:20px 0; }
+.sdr .service-rail-title { font-size:10px; font-weight:700; letter-spacing:1px; color:#718393; margin:0 0 22px; }
+.sdr .service-rail ol { list-style:none; padding:0; margin:0; }
+.sdr .service-rail li { display:flex; align-items:flex-start; position:relative; gap:13px; padding-bottom:38px; color:#748697; }
+.sdr .service-rail li:not(:last-child)::after { content:""; position:absolute; left:18px; width:1px; top:42px; bottom:7px; background:#d7e3eb; }
+.sdr .service-step-dot { display:grid; place-items:center; width:37px; height:37px; flex:0 0 37px; border-radius:50%; border:1px solid #cbdbe5; background:#fff; color:#708594; font-size:14px; font-weight:700; }
+.sdr .service-rail strong { display:block; font-size:13px; margin-top:1px; line-height:1.5; }
+.sdr .service-rail small { display:block; font-size:11px; line-height:1.5; margin-top:4px; }
+.sdr .service-rail .is-current { color:var(--navy); }
+.sdr .service-rail .is-current .service-step-dot { background:var(--cyan); color:#0f0f0f; border-color:var(--cyan); }
+.sdr .service-rail .is-current small { color:var(--blue); }
+.sdr .service-rail .is-done .service-step-dot { background:#edf7f2; color:#29715a; border-color:#c6e4d6; }
+.sdr .service-rail .is-done small { color:#29715a; }
+.sdr .service-rail-help { border-top:1px solid var(--line); padding-top:22px; }
+.sdr .service-rail-help strong { font-size:12px; font-weight:600; }
+.sdr .service-rail-help a { display:block; margin-top:7px; font-size:11px; color:var(--blue); }
+.sdr .service-rail-mail { font-size:11px; color:var(--sub); margin:18px 0 0; line-height:1.75; max-width:210px; }
+.sdr .service-panel { background:#fff; border:1px solid var(--line); border-top:3px solid var(--cyan); border-radius:8px; padding:30px 32px; min-width:0; }
+.sdr .service-panel-top { display:flex; gap:12px; justify-content:space-between; align-items:center; margin-bottom:15px; }
+.sdr .service-panel-top>span { font-size:10px; letter-spacing:1px; font-weight:700; color:var(--blue); }
+.sdr .service-panel-top small { font-size:10px; color:#758694; }
+.sdr .service-panel h2 { font-size:22px; line-height:1.4; margin:0 0 8px; letter-spacing:-.4px; }
+.sdr .service-intro { font-size:13px; color:var(--sub); margin:0 0 22px; }
+.sdr .service-two { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.sdr .service-two>div,.sdr .service-city>div { min-width:0; }
+.sdr .service-panel label { margin-top:16px; }
+.sdr .service-panel label small { color:var(--sub); font-weight:400; font-size:11px; }
+.sdr .service-label { display:flex; align-items:center; gap:8px; margin-top:16px; margin-bottom:7px; }
+.sdr .service-label label { margin:0; }
+.sdr .service-help { display:inline-flex; position:relative; }
+.sdr .service-help>button { width:23px; height:23px; border:1px solid #b8cfdc; border-radius:50%; background:#f3f8fb; color:#3e6a83; font-size:12px; cursor:help; }
+.sdr .service-tooltip { display:none; position:absolute; left:-40px; top:28px; z-index:10; width:240px; padding:13px 15px; border:1px solid #d1dfe8; border-radius:7px; color:#294c64; background:#fff; box-shadow:0 5px 18px #20384d20; font-size:12px; line-height:1.6; font-weight:400; }
+.sdr .service-tooltip.is-open { display:block; }
+.sdr .service-receita { display:inline-block; font-size:11px; color:var(--blue); margin:10px 0 14px; text-decoration:underline; text-underline-offset:3px; }
+.sdr .service-city { display:grid; grid-template-columns:minmax(0,1fr) 90px; gap:18px; }
+.sdr .service-panel select { min-height:47px; width:100%; padding:12px; border:1px solid #cfcfcf; border-radius:5px; background:#fff; color:var(--ink); font:inherit; }
+.sdr .service-panel input[readonly] { background:#edf3f7; color:#526d80; }
+.sdr .service-actions { display:flex; align-items:center; justify-content:space-between; gap:18px; flex-wrap:wrap; border-top:1px solid var(--line); margin-top:26px; padding-top:22px; }
+.sdr .service-actions>span { font-size:10px; color:#708394; }
+.sdr .service-actions>a { font-size:12px; color:var(--blue); }
+.sdr .service-back { border:0; background:transparent; color:var(--blue); padding:10px 0; cursor:pointer; font:inherit; font-size:12px; }
+.sdr .service-match { display:flex; align-items:center; gap:12px; padding:14px 16px; margin:20px 0; background:#f1f8f5; border:1px solid #d0e6da; border-radius:7px; color:#29634d; }
+.sdr .service-match>span { width:24px; font-size:17px; }
+.sdr .service-match>div { flex:1; min-width:0; }
+.sdr .service-match strong { display:block; font-size:12px; }
+.sdr .service-match small { display:block; font-size:10px; margin-top:4px; overflow-wrap:anywhere; }
+.sdr .service-match button { color:var(--blue); font-size:11px; background:transparent; padding:8px; border:0; cursor:pointer; text-decoration:underline; }
+.sdr .service-fieldset { border:0; padding:0; margin:26px 0; }
+.sdr .service-form-fields { border:0; padding:0; margin:0; min-width:0; }
+.sdr .service-fieldset legend { width:100%; padding:0 0 10px; font-size:13px; font-weight:700; color:var(--navy); border-bottom:1px solid var(--line); }
+.sdr .service-review { background:#f5f5f5; border-radius:6px; padding:13px 16px; margin-top:24px; }
+.sdr .service-review>div { display:flex; justify-content:space-between; gap:15px; font-size:12px; }
+.sdr .service-review strong { font-size:17px; color:var(--navy); }
+.sdr .service-review p { font-size:10px; color:var(--sub); margin:5px 0 0; }
+.sdr .service-honeypot { position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden; }
+.sdr .service-final-summary { margin:22px 0; }
+.sdr .service-final-summary>div { display:flex; justify-content:space-between; gap:20px; padding:11px 0; border-bottom:1px solid #edf2f5; font-size:12px; }
+.sdr .service-final-summary span { color:var(--sub); flex:0 0 75px; }
+.sdr .service-final-summary strong { text-align:right; font-weight:600; overflow-wrap:anywhere; }
+.sdr .service-bank-empty { padding:20px; border:1px dashed #b7cddb; border-radius:8px; background:#f8fbfd; }
+.sdr .service-bank-empty h3,.sdr .service-email-note h3 { font-size:14px; letter-spacing:0; margin:0 0 8px; }
+.sdr .service-bank-empty p,.sdr .service-email-note p { font-size:12px; color:var(--sub); margin:0 0 12px; line-height:1.8; }
+.sdr .service-bank-empty small,.sdr .service-email-note small { display:block; font-size:10px; color:#73899a; margin-top:10px; }
+.sdr .service-bank-button { min-height:45px; padding:10px 16px; border:1px solid #cfdae3; border-radius:6px; background:#e9eff3; color:#748797; cursor:not-allowed; font-size:12px; }
+.sdr .service-email-note { margin-top:25px; border-top:1px solid var(--line); padding-top:22px; }
+.sdr .service-faq { margin:40px 0 0 268px; }
+.sdr .service-faq h2 { font-size:21px; margin:0 0 10px; }
+.sdr .service-faq summary { font-size:12px; padding:17px 0; }
+.sdr .service-faq details p { font-size:12px; }
+.sdr .service-faq a { color:var(--blue); text-decoration:underline; }
+@media(max-width:900px) {
+  .sdr .service-grid { grid-template-columns:195px minmax(0,1fr); gap:20px; }
+  .sdr .service-panel { padding:25px; }
+  .sdr .service-two { grid-template-columns:1fr; gap:0; }
+  .sdr .service-faq { margin-left:215px; }
+}
+@media(max-width:650px) {
+  .sdr .wrap.service-page { padding-top:25px; }
+  .sdr .service-title { padding:25px 0; }
+  .sdr .service-title h1 { font-size:25px; }
+  .sdr .service-title p { font-size:12px; }
+  .sdr .service-start h2 { font-size:19px; }
+  .sdr .service-negotiations summary { padding:13px; }
+  .sdr .service-negotiations summary small { font-size:10px; }
+  .sdr .service-negotiations-body { padding:0 12px 14px; }
+  .sdr .service-negotiations th,.sdr .service-negotiations td { padding:9px 6px; font-size:11px; overflow-wrap:anywhere; }
+  .sdr .negotiation-status { padding:3px 5px; font-size:10px; }
+  .sdr .service-grid { grid-template-columns:1fr; gap:18px; }
+  .sdr .service-rail { position:static; padding:0; }
+  .sdr .service-rail-title,.sdr .service-rail-help,.sdr .service-rail-mail { display:none; }
+  .sdr .service-rail ol { display:flex; gap:10px; }
+  .sdr .service-rail li { flex:1; flex-direction:column; gap:7px; padding:0 0 12px; border-bottom:2px solid #dce6ed; }
+  .sdr .service-rail li:not(:last-child)::after { display:none; }
+  .sdr .service-rail li.is-current { border-color:var(--blue); }
+  .sdr .service-rail strong { font-size:10px; }
+  .sdr .service-rail small { display:none; }
+  .sdr .service-step-dot { width:30px; height:30px; flex:0 0 30px; font-size:12px; }
+  .sdr .service-panel { padding:22px 18px; }
+  .sdr .service-panel h2 { font-size:20px; }
+  .sdr .service-panel-top small { font-size:9px; }
+  .sdr .service-panel input,.sdr .service-panel select { font-size:16px; }
+  .sdr .service-city { gap:12px; grid-template-columns:minmax(0,1fr) 75px; }
+  .sdr .service-actions .primary-btn { width:100%; }
+  .sdr .service-faq { margin:30px 0 0; }
+  .sdr .service-tooltip { left:auto; right:-30px; width:min(240px,75vw); }
+  .sdr .service-match { padding:12px; gap:8px; }
+}

@@ -1,0 +1,56 @@
+{
+  "package": "sindratar-sp-cct-integration",
+  "version": "2.1.0",
+  "status": "source_only_not_deployed_not_live_tested",
+  "targetSupabaseProject": "lbrtshklxkhvlewwdpfb",
+  "externalMutationsPerformed": false,
+  "bankAdapter": "contract_required_fail_closed",
+  "paymentsEnabledInNativeHtml": false,
+  "publicFlow": "three_steps_no_account_email_delivery",
+  "editorialSnapshot": {
+    "source": "https://sindratarsp.com.br/solicitar-convencao-coletiva-2/",
+    "year": 2026,
+    "lastUpdateShown": "20/10/2026 às 10h30",
+    "liveSync": false,
+    "authorizesPaymentOrDownload": false
+  },
+  "approvedMemberBenefit": "server_approved_zero_charge_auto_release_if_private_pdfs_exist",
+  "releaseSource": "transactional_auto_release_with_manual_missing_pdf_exception",
+  "files": [
+    "README-tecnico.md",
+    "wordpress/pagina-convencoes-sindratar.html",
+    "wordpress/pagina-cct-servico.html",
+    "wordpress/sindratar-cct.php",
+    "wordpress/assets/slots/brand.header.png",
+    "supabase/config.toml",
+    "supabase/migrations/202611070001_cct.sql",
+    "supabase/migrations/202611080001_guest_service.sql",
+    "supabase/functions/_shared/core.mjs",
+    "supabase/functions/_shared/guest.mjs",
+    "supabase/functions/sindratar-api/bank-adapter.ts",
+    "supabase/functions/sindratar-api/index.ts",
+    "tests/security.test.mjs",
+    "tests/source-contract.test.mjs",
+    "tests/guest.test.mjs",
+    "tests/reference-content.test.mjs"
+  ],
+  "publicPreviewCopies": [
+    "/entrega/pagina-convencoes-sindratar.html",
+    "/entrega/pagina-cct-servico.html",
+    "/entrega/README-tecnico.md"
+  ],
+  "tests": {
+    "commandFromProjectRoot": "node --test integration/tests/security.test.mjs integration/tests/source-contract.test.mjs integration/tests/guest.test.mjs integration/tests/reference-content.test.mjs",
+    "kind": "deterministic_core_and_source_contract_checks",
+    "notPerformed": ["php_lint", "deno_typecheck", "postgres_execution", "supabase_live", "bank_live", "resend_live"]
+  },
+  "activationDependencies": [
+    "agency_manual",
+    "official_cct_pdfs_and_reviewed_eligibility_catalog",
+    "authorized_supabase_staging_and_production_access",
+    "contracted_itau_pix_boleto_product_protocol",
+    "verified_email_domain_and_resend",
+    "actual_outbox_and_reconciliation_worker",
+    "approved_lgpd_retention_sla_calendar_rpo_rto"
+  ]
+}

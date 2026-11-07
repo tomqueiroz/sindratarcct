@@ -1,0 +1,40 @@
+{
+  "id": "coding-agent-web-template-selfhost",
+  "name": "Selfhost Web App Template",
+  "capabilities": ["client", "server", "auth", "db", "user"],
+  "description": "React + Vite client with Hono + Better Auth server scaffold for self-hosted deployments.",
+  "entrypoints": {
+    "clientDev": "apps/client/vite.config.ts",
+    "serverDev": "apps/server/_core/dev-server.ts",
+    "fcEventAdapter": "apps/server/_core/fc-entry.ts",
+    "fcWebFunction": "apps/server/_core/fc-entry.web.ts"
+  },
+  "files": [
+    "apps/client/src/App.tsx",
+    "apps/client/src/components/auth/AdminGuard.tsx",
+    "apps/client/src/components/auth/route-guards.tsx",
+    "apps/client/src/lib/api.ts",
+    "apps/client/src/lib/api-base.ts",
+    "apps/client/src/lib/auth.ts",
+    "apps/server/_core/auth.ts",
+    "apps/server/_core/create-app.ts",
+    "apps/server/_core/db.ts",
+    "apps/server/_core/env.ts",
+    "apps/server/_core/route-helpers.ts",
+    "apps/server/db/schema.ts",
+    "apps/server/middlewares/with-session.ts",
+    "apps/server/routes/auth-config.route.ts",
+    "apps/server/routes/health.route.ts",
+    "apps/server/routes/me.route.ts",
+    "apps/server/routes/todos.route.ts",
+    "apps/server/services/todos.ts",
+    "packages/shared/src/http.ts"
+  ],
+  "notes": [
+    "Default FC shape is event adapter for JSON/CRUD apps.",
+    "Switch to fc-entry.web.ts and custom runtime for streaming/SSE/WebSocket/large-response apps.",
+    "Auth uses Better Auth REST with bearer token transport. Better Auth storage is backed by skybase-db through apps/server/_core/db.ts.",
+    "apps/server/_core/db.ts is the only runtime DB gateway and owns libsql/Drizzle clients. It reads SKYBASE_DB_ENDPOINT, SKYBASE_DB_AUTH_TOKEN or legacy SKYBASE_DB_TOKEN, and SKYBASE_DB_NAMESPACE from server env and injects x-namespace for sqld.",
+    "Drizzle schema lives in apps/server/db/schema.ts. The template runtime does not create databases or run migrations; controller/agent tooling owns provisioning and setup_database applies schema before runtime. Do not expose DB setup or migration scripts from the generated app."
+  ]
+}

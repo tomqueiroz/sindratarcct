@@ -1,0 +1,4 @@
+# Code verifies JWT via auth.getUser, worker token or contracted bank authentication
+# per route. Gateway JWT verification cannot authenticate a bank webhook.
+[functions.sindratar-api]
+verify_jwt = false

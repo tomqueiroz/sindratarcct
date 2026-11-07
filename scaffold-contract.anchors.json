@@ -1,0 +1,99 @@
+{
+  "_comment": "Checked against scaffold source by scripts/check-agents-contract.mjs (pnpm lint) — currently the ONLY enforcement of these anchors. A mirrored authoritative copy for oh-my-agent (tests/template_anchors.json, asserted in sync by tests/test_template_contract.py) exists on oh-my-agent branch feat-website-scaffold-contract but is NOT yet merged to its main; until it merges there is no cross-repo CI gate. Once it lands: change the two copies ONLY together (template MR + oma MR).",
+  "contract_version": "v2",
+  "paths": [
+    "package.json",
+    "pnpm-workspace.yaml",
+    "AGENTS.md",
+    "apps/server/_core/create-app.ts",
+    "apps/server/_core/route-registry.ts",
+    "apps/server/_core/public-url.ts",
+    "apps/server/_core/db.ts",
+    "apps/server/_core/auth.ts",
+    "apps/server/_core/env.ts",
+    "apps/server/middlewares/with-session.ts",
+    "apps/server/routes/todos.route.ts",
+    "apps/server/services/todos.ts",
+    "apps/server/services/s3_storage.ts",
+    "apps/server/services/message.ts",
+    "apps/server/migrations/000_auth.sql",
+    "apps/server/migrations/001_init.sql",
+    "apps/server/_test/infra",
+    "apps/server/__tests__",
+    "apps/client/index.html",
+    "apps/client/public/app-config.js",
+    "apps/client/scripts/prerender.mjs",
+    "apps/client/src/lib/api.ts",
+    "apps/client/src/lib/api-base.ts",
+    "apps/client/src/lib/auth.ts",
+    "apps/client/src/pages/auth/Index.tsx",
+    "packages/shared/src/http.ts"
+  ],
+  "symbols": {
+    "apps/server/_core/db.ts": [
+      "getDb",
+      "executeSql",
+      "isDatabaseConfigured",
+      "DatabaseError"
+    ],
+    "apps/server/_core/auth.ts": [
+      "getAuth",
+      "AuthUser"
+    ],
+    "apps/server/_core/route-registry.ts": [
+      "routeEntries",
+      "publicApiPrefixes",
+      "isPublic"
+    ],
+    "apps/server/middlewares/with-session.ts": [
+      "withSession"
+    ],
+    "apps/server/_core/env.ts": [
+      "SKYBASE_DB_ENDPOINT",
+      "SKYWORK_API_TOKEN",
+      "SKYWORK_AI_BASE_URL",
+      "SKYWORK_GATEWAY_BASE_URL",
+      "SKY_FC_SERVER_PORT",
+      "PUBLIC_BACKEND_URL"
+    ],
+    "apps/server/_core/public-url.ts": [
+      "getPublicBaseUrl"
+    ],
+    "packages/shared/src/http.ts": [
+      "apiSuccess",
+      "apiFailure"
+    ],
+    "apps/client/src/lib/api.ts": [
+      "apiFetch",
+      "PlatformAIChatMessage",
+      "PlatformAIChatInput",
+      "PlatformAIImageInput",
+      "callPlatformAI",
+      "generatePlatformAIImage",
+      "syncAuthTokenFromUrl",
+      "startThirdPartyGoogleAuth"
+    ],
+    "apps/client/src/lib/api-base.ts": [
+      "apiUrl",
+      "authUrl"
+    ],
+    "apps/client/src/lib/auth.ts": [
+      "authClient",
+      "getAuthToken",
+      "setAuthToken",
+      "syncAuthTokenFromResult"
+    ],
+    "apps/server/services/s3_storage.ts": [
+      "storagePut",
+      "storageGetForUser",
+      "storageDeleteForUser",
+      "storageSignDownloadUrl"
+    ],
+    "apps/server/services/message.ts": [
+      "sendEmailVerificationCode"
+    ],
+    "apps/client/index.html": [
+      "app-config.js"
+    ]
+  }
+}
